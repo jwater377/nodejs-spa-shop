@@ -7,11 +7,11 @@ const connect = () => {
     .connect(
       "mongodb+srv://jwater:jwater377@express-mongo.vgyogtg.mongodb.net/?retryWrites=true&w=majority",
       {
-        dbName: "spa_mall", // spa_mall 데이터베이스명을 사용합니다.
+        dbName: 'node_lv1', // node_lv1 데이터베이스명을 사용합니다.
       },
     )
-    .catch((err) => console.log(err))
-    .then(() => console.log("몽고디비 연결 성공"));
+    .then(() => console.log("몽고디비 연결 성공"))
+    .catch((err) => console.log(`MongoDB 연결에 실패하였습니다. ${err}`));
 };
 
 mongoose.connection.on("error", (err) => {
