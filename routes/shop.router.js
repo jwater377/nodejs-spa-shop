@@ -1,6 +1,6 @@
 import express from 'express';
-import Shop from '../schemas/shop.schema';
-import { createId } from '@paralleldrive/cuid2';
+import Shop from "../schemas/shop.js";
+// import { createId } from '@paralleldrive/cuid2';
 
 
 
